@@ -3,8 +3,8 @@
 import Foundation
 
 
-struct User {
+class User: ObservableObject {
    
-   var firstName: String = "Dorothy"
-   var lastName: String = "Gale"
+   @Published var firstName: String = "Dorothy"
+   @Published var lastName: String = "Gale"
 }

@@ -8,7 +8,7 @@ struct UserView: View {
    
    // MARK: - PROPERTY WRAPPERS
    
-   @State private var user: User = User()
+   @ObservedObject var user: User = User()
    
    
    // MARK: - COMPUTED PROPERTIES
