@@ -15,6 +15,7 @@
 		09D0E42126A2D28E00C71C28 /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D0E42026A2D28E00C71C28 /* UserView.swift */; };
 		09D0E42426A2FCBA00C71C28 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D0E42326A2FCBA00C71C28 /* MainView.swift */; };
 		09D0E42726A2FCC900C71C28 /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D0E42626A2FCC900C71C28 /* SecondView.swift */; };
+		09D0E42B26A3084D00C71C28 /* NumbersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D0E42A26A3084D00C71C28 /* NumbersView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		09D0E42026A2D28E00C71C28 /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
 		09D0E42326A2FCBA00C71C28 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		09D0E42626A2FCC900C71C28 /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
+		09D0E42A26A3084D00C71C28 /* NumbersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumbersView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 				09D0E42026A2D28E00C71C28 /* UserView.swift */,
 				09D0E42326A2FCBA00C71C28 /* MainView.swift */,
 				09D0E42626A2FCC900C71C28 /* SecondView.swift */,
+				09D0E42A26A3084D00C71C28 /* NumbersView.swift */,
 			);
 			path = "Day 36";
 			sourceTree = "<group>";
@@ -162,6 +165,7 @@
 				09D0E40E26A2CF9E00C71C28 /* ContentView.swift in Sources */,
 				09D0E40C26A2CF9E00C71C28 /* iExpense_2App.swift in Sources */,
 				09D0E41D26A2D24A00C71C28 /* User.swift in Sources */,
+				09D0E42B26A3084D00C71C28 /* NumbersView.swift in Sources */,
 				09D0E42426A2FCBA00C71C28 /* MainView.swift in Sources */,
 				09D0E42126A2D28E00C71C28 /* UserView.swift in Sources */,
 			);
