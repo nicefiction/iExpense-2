@@ -18,7 +18,8 @@ struct ContentView: View {
       NavigationView {
          List {
             ForEach(expenses.items,
-                    id: \.name,
+                    // id: \.name,
+                    // id: \.id,
                     content: { (item: ExpenseItem) in
                      Text("\(item.name)")
                     })
