@@ -22,7 +22,18 @@ struct ContentView: View {
                     // id: \.name,
                     // id: \.id,
                     content: { (item: ExpenseItem) in
-                     Text("\(item.name)")
+                     HStack {
+                        VStack(alignment: .leading) {
+                           Text("\(item.name)")
+                              .font(.headline)
+                           Text("\(item.type)")
+                        }
+                        Spacer()
+                        Text("$\(item.amount)")
+                           .font(.title)
+                           .fontWeight(.semibold)
+                           .padding(.trailing)
+                     }
                     })
                .onDelete(perform: removeItems)
          }
