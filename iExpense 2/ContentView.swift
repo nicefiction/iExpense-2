@@ -9,6 +9,7 @@ struct ContentView: View {
    // MARK: - PROPERTY WRAPPERS
    
    @ObservedObject var expenses = Expenses()
+   @State private var isShowingSheet: Bool = false
    
    
    // MARK: - COMPUTED PROPERTIES
@@ -30,11 +31,12 @@ struct ContentView: View {
          .navigationBarItems(
             leading: Button(
                action: {
-                  let newExpense = ExpenseItem(name: "Test expense",
-                                               type: "Personnal",
-                                               amount: 5)
+//                  let newExpense = ExpenseItem(name: "Test expense",
+//                                               type: "Personnal",
+//                                               amount: 5)
                   
-                  expenses.items.append(newExpense)
+//                  expenses.items.append(newExpense)
+                  isShowingSheet.toggle()
                },
                label: {
                   Image(systemName: "plus.circle")
@@ -42,6 +44,10 @@ struct ContentView: View {
                }),
             trailing: EditButton()
          )
+         .sheet(isPresented: $isShowingSheet,
+                content: {
+                  AddView(expenses: expenses)
+         })
       }
    }
    
