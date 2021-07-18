@@ -31,11 +31,6 @@ struct ContentView: View {
          .navigationBarItems(
             leading: Button(
                action: {
-//                  let newExpense = ExpenseItem(name: "Test expense",
-//                                               type: "Personnal",
-//                                               amount: 5)
-                  
-//                  expenses.items.append(newExpense)
                   isShowingSheet.toggle()
                },
                label: {

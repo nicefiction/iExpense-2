@@ -8,6 +8,7 @@ struct AddView: View {
    
    // MARK: - PROPERTY WRAPPERS
    
+   @Environment(\.presentationMode) var presentationMode
    @ObservedObject var expenses: Expenses
    @State private var name: String = ""
    @State private var type: String = "Leisure"
@@ -37,8 +38,21 @@ struct AddView: View {
                    })
             TextField("amount",
                       text: $amount)
+               .keyboardType(.numberPad)
          }
          .navigationBarTitle(Text("New Expense Item"))
+         .navigationBarItems(trailing: Button("Done",
+                                              action: {
+                                                if
+                                                   let _amount =  Int(amount) {
+                                                   let newItem = ExpenseItem(name: name,
+                                                                             type: type,
+                                                                             amount: _amount)
+                                                   
+                                                   expenses.items.append(newItem)
+                                                }
+                                                presentationMode.wrappedValue.dismiss()
+                                              }))
       }
    }
 }
