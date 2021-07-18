@@ -18,6 +18,8 @@
 		09D0E42B26A3084D00C71C28 /* NumbersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D0E42A26A3084D00C71C28 /* NumbersView.swift */; };
 		09D0E42E26A3555700C71C28 /* TapcountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D0E42D26A3555700C71C28 /* TapcountView.swift */; };
 		09D0E43226A3595B00C71C28 /* HumanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D0E43126A3595B00C71C28 /* HumanView.swift */; };
+		09D0E43526A42FC600C71C28 /* ExpenseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D0E43426A42FC600C71C28 /* ExpenseItem.swift */; };
+		09D0E43826A4301700C71C28 /* Expenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D0E43726A4301700C71C28 /* Expenses.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		09D0E42A26A3084D00C71C28 /* NumbersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumbersView.swift; sourceTree = "<group>"; };
 		09D0E42D26A3555700C71C28 /* TapcountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapcountView.swift; sourceTree = "<group>"; };
 		09D0E43126A3595B00C71C28 /* HumanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumanView.swift; sourceTree = "<group>"; };
+		09D0E43426A42FC600C71C28 /* ExpenseItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseItem.swift; sourceTree = "<group>"; };
+		09D0E43726A4301700C71C28 /* Expenses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expenses.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +72,8 @@
 			children = (
 				09D0E40B26A2CF9E00C71C28 /* iExpense_2App.swift */,
 				09D0E41B26A2D08A00C71C28 /* Day 36 */,
+				09D0E43426A42FC600C71C28 /* ExpenseItem.swift */,
+				09D0E43726A4301700C71C28 /* Expenses.swift */,
 				09D0E40D26A2CF9E00C71C28 /* ContentView.swift */,
 				09D0E40F26A2CFA100C71C28 /* Assets.xcassets */,
 				09D0E41426A2CFA100C71C28 /* Info.plist */,
@@ -174,6 +180,8 @@
 				09D0E41D26A2D24A00C71C28 /* User.swift in Sources */,
 				09D0E42B26A3084D00C71C28 /* NumbersView.swift in Sources */,
 				09D0E42426A2FCBA00C71C28 /* MainView.swift in Sources */,
+				09D0E43526A42FC600C71C28 /* ExpenseItem.swift in Sources */,
+				09D0E43826A4301700C71C28 /* Expenses.swift in Sources */,
 				09D0E42E26A3555700C71C28 /* TapcountView.swift in Sources */,
 				09D0E42126A2D28E00C71C28 /* UserView.swift in Sources */,
 			);
