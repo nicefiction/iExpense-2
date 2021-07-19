@@ -29,37 +29,54 @@ struct AddExpenseItemView: View {
          Form {
             TextField("name", text: $name)
             Picker("Expense type",
-                   selection: $type,
-                   content: {
-                     ForEach(types,
-                             id: \.self,
-                             content: { (type: String) in
-                              Text(type)
-                             })
-                   })
-            TextField("amount",
-                      text: $amount)
+                   selection: $type) {
+               ForEach(types, id: \.self) { (type: String) in
+                  Text(type)
+               }
+            }
+            .pickerStyle(SegmentedPickerStyle())
+            TextField("amount", text: $amount)
                .keyboardType(.numberPad)
          }
          .navigationBarTitle(Text("New Expense Item"))
+//         .navigationBarItems(
+//             trailing : Button(action : {
+//                 if let _amount = Int(amount) {
+//                     let expenseItem = ExpenseItem(name : name ,
+//                                                   type : selectedType ,
+//                                                   amount : _amount)
+//                     expenseItems.list.append(expenseItem)
+//
+//                     presentationMode.wrappedValue.dismiss()
+//                 } else {
+//                     isShowingInvalidDataAlert.toggle()
+//                 }
+//             } , label : {
+//                 Text("Save item")
+//             })
+//         )
+//         .alert(isPresented: $isShowingInvalidDataAlert) {
+//             Alert(title : Text("Invalid data .") ,
+//                   message : Text("Enter a number .") ,
+//                   dismissButton : .default(Text("Cancel")))
+//         }
          .navigationBarItems(trailing: Button("Done") {
             if
                let _amount =  Int(amount) {
                let newItem = ExpenseItem(name: name,
                                          type: type,
                                          amount: _amount)
-               
+
                expenses.items.append(newItem)
+               presentationMode.wrappedValue.dismiss()
             } else {
                isShowingAlert.toggle()
             }
-            
-            presentationMode.wrappedValue.dismiss()
          })
          .alert(isPresented: $isShowingAlert) {
             Alert(title: Text("Error"),
                   message: Text("You need to enter a number ."),
-                  dismissButton: .default(Text("OK")))
+                  dismissButton: .cancel(Text("OK")))
          }
       }
    }

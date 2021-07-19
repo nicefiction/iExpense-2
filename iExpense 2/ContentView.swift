@@ -33,6 +33,7 @@ struct ContentView: View {
                            .font(.title)
                            .fontWeight(.semibold)
                            .padding(.trailing)
+                           .foregroundColor(colorTextWhen(amount: item.amount))
                      }
                     })
                .onDelete(perform: removeItems)
@@ -52,7 +53,7 @@ struct ContentView: View {
          )
          .sheet(isPresented: $isShowingSheet,
                 content: {
-                  AddView(expenses: expenses)
+                  AddExpenseItemView(expenses: expenses)
          })
       }
    }
@@ -63,6 +64,17 @@ struct ContentView: View {
    func removeItems(atOffsets offsets: IndexSet) {
       
       expenses.items.remove(atOffsets: offsets)
+   }
+   
+   
+   func colorTextWhen(amount: Int)
+   -> Color {
+      
+      switch amount {
+      case 0...10  : return Color.blue
+      case 11...99 : return Color.orange
+      default      : return Color.red
+      }
    }
 }
 

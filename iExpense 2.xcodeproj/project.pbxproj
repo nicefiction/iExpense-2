@@ -20,7 +20,7 @@
 		09D0E43226A3595B00C71C28 /* HumanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D0E43126A3595B00C71C28 /* HumanView.swift */; };
 		09D0E43526A42FC600C71C28 /* ExpenseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D0E43426A42FC600C71C28 /* ExpenseItem.swift */; };
 		09D0E43826A4301700C71C28 /* Expenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D0E43726A4301700C71C28 /* Expenses.swift */; };
-		09D0E43E26A44FE300C71C28 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D0E43D26A44FE300C71C28 /* AddView.swift */; };
+		09D0E43E26A44FE300C71C28 /* AddExpenseItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D0E43D26A44FE300C71C28 /* AddExpenseItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,7 +39,7 @@
 		09D0E43126A3595B00C71C28 /* HumanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumanView.swift; sourceTree = "<group>"; };
 		09D0E43426A42FC600C71C28 /* ExpenseItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseItem.swift; sourceTree = "<group>"; };
 		09D0E43726A4301700C71C28 /* Expenses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expenses.swift; sourceTree = "<group>"; };
-		09D0E43D26A44FE300C71C28 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
+		09D0E43D26A44FE300C71C28 /* AddExpenseItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExpenseItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +77,7 @@
 				09D0E43426A42FC600C71C28 /* ExpenseItem.swift */,
 				09D0E43726A4301700C71C28 /* Expenses.swift */,
 				09D0E40D26A2CF9E00C71C28 /* ContentView.swift */,
-				09D0E43D26A44FE300C71C28 /* AddView.swift */,
+				09D0E43D26A44FE300C71C28 /* AddExpenseItemView.swift */,
 				09D0E40F26A2CFA100C71C28 /* Assets.xcassets */,
 				09D0E41426A2CFA100C71C28 /* Info.plist */,
 				09D0E41126A2CFA100C71C28 /* Preview Content */,
@@ -184,7 +184,7 @@
 				09D0E42B26A3084D00C71C28 /* NumbersView.swift in Sources */,
 				09D0E42426A2FCBA00C71C28 /* MainView.swift in Sources */,
 				09D0E43526A42FC600C71C28 /* ExpenseItem.swift in Sources */,
-				09D0E43E26A44FE300C71C28 /* AddView.swift in Sources */,
+				09D0E43E26A44FE300C71C28 /* AddExpenseItemView.swift in Sources */,
 				09D0E43826A4301700C71C28 /* Expenses.swift in Sources */,
 				09D0E42E26A3555700C71C28 /* TapcountView.swift in Sources */,
 				09D0E42126A2D28E00C71C28 /* UserView.swift in Sources */,
