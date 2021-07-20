@@ -39,7 +39,6 @@ struct ContentView: View {
                .onDelete(perform: removeItems)
          }
          .navigationBarTitle(Text("iExpense"))
-         // .navigationBarItems(trailing: EditButton())
          .navigationBarItems(
             leading: Button(
                action: {

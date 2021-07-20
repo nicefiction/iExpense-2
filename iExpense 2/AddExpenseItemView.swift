@@ -39,27 +39,6 @@ struct AddExpenseItemView: View {
                .keyboardType(.numberPad)
          }
          .navigationBarTitle(Text("New Expense Item"))
-//         .navigationBarItems(
-//             trailing : Button(action : {
-//                 if let _amount = Int(amount) {
-//                     let expenseItem = ExpenseItem(name : name ,
-//                                                   type : selectedType ,
-//                                                   amount : _amount)
-//                     expenseItems.list.append(expenseItem)
-//
-//                     presentationMode.wrappedValue.dismiss()
-//                 } else {
-//                     isShowingInvalidDataAlert.toggle()
-//                 }
-//             } , label : {
-//                 Text("Save item")
-//             })
-//         )
-//         .alert(isPresented: $isShowingInvalidDataAlert) {
-//             Alert(title : Text("Invalid data .") ,
-//                   message : Text("Enter a number .") ,
-//                   dismissButton : .default(Text("Cancel")))
-//         }
          .navigationBarItems(trailing: Button("Done") {
             if
                let _amount =  Int(amount) {
