@@ -18,10 +18,11 @@ class Expenses: ObservableObject {
    @Published var items = Array<ExpenseItem>() {
       
       didSet {
+         // Stores a custom object in UserDefaults [S1] :
          let jsonEncoder = JSONEncoder()
-         
+         // Convert the instance to Data [S1] :
          if let _encodedItems = try? jsonEncoder.encode(items) {
-            // S1 : Stores a custom object in UserDefaults :
+            // Save the Data to UserDefaults [S1] :
             UserDefaults.standard.set(_encodedItems,
                                       forKey: "Items")
          }
@@ -41,9 +42,9 @@ class Expenses: ObservableObject {
     we load any saved `data` from `UserDefaults` .
     */
    init() {
-      
       // 1. Reads whatever is in “Items” as a Data object :
-      // S1 : Reads custom objects from UserDefaults .
+      // Reads custom objects from UserDefaults // S1
+      
       // OPTION A — PAUL HUDSON / Returns the data object associated with the specified key :
       // if let _savedItems = UserDefaults.standard.data(forKey: "Items") {
       // OPTION B — SIMPLE SWIFT GUIDE / Returns the object associated with the specified key :
@@ -75,3 +76,5 @@ class Expenses: ObservableObject {
       }
    }
 }
+
+
